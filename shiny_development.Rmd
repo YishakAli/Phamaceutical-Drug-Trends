@@ -1,0 +1,43 @@
+---
+title: "Untitled"
+author: "Yishak Ali"
+date: "10/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readxl)
+library(tidyverse)
+library(janitor)
+```
+
+
+
+```{r}
+rd_cost <- read_excel("r&d_costs2010_2019.xlsx", skip = 4) %>% 
+  clean_names() %>% 
+  rename(year = x1) %>% 
+  mutate(extension_cohort = as.numeric(extension_cohort)) %>% 
+  pivot_longer(cols = -year, names_to = "cohort", values_to = "costs")
+
+rd_cost %>% 
+ggplot(aes(year, costs, fill = cohort)) +
+  geom_col(position = position_dodge2(preserve = "single")) +
+  labs(title = "Average R&D Cost to Develop a Pharmaceutical Compound, 2010-2019",
+       x = "Year", y = "Cost in Billions of US Dollars")
+
+
+
+
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r echo=FALSE}
+
+```
+
