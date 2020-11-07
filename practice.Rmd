@@ -1,0 +1,203 @@
+---
+title: "draft"
+author: "Yishak Ali"
+date: "11/1/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(readxl)
+library(gganimate)
+```
+
+
+
+```{r}
+Us_premium <- read_excel("US_premium_rd_costs.xlsx") %>% 
+  clean_names() %>%
+  mutate(company = as.factor(company))
+
+# International price as a portion of US prices
+
+Us_premium %>% 
+  ggplot(aes(x = fct_reorder(company, international_price_us_price), 
+             y = international_price_us_price, 
+             fill = company)) +
+    geom_col() +
+    theme(axis.text.x = element_text(angle = 90)) +
+    theme(legend.position = "none") +
+    labs(title = "International Drug Prices as a Percentage of US Prices, 2015",
+         subtitle = "US Price are consistently above International Prices",
+         x = "Firms",
+         y = "Percentage",
+         caption = "Health Affairs Blog") +
+    scale_y_continuous(labels = scales::percent_format()) +
+    geom_hline(yintercept = mean(Us_premium$international_price_us_price),
+               color = "blue")
+
+
+
+Us_premium_2 <- Us_premium %>% 
+  select(company, us_sales_2015_millions, revenue_from_us_premium) %>% 
+  mutate(difference = us_sales_2015_millions - revenue_from_us_premium) %>% 
+  mutate(premium_sales = revenue_from_us_premium/us_sales_2015_millions) %>%
+  mutate(premium_sales = round(revenue_from_us_premium/us_sales_2015_millions, 2) * 100) %>% 
+  pivot_longer(col = -c(company,us_sales_2015_millions, premium_sales), 
+               names_to = "revenue_source", 
+               values_to = "dollar_amount")
+
+# US premium revenue as a portion of total US sales revenue
+
+Us_premium_2 %>% 
+  ggplot(aes(x = fct_reorder(company, dollar_amount), y = dollar_amount, fill = revenue_source)) +
+    geom_col() +
+    geom_label(data = Us_premium_2 %>% filter(revenue_source == "difference"), aes(label = premium_sales), size = 2) +
+    theme(axis.text.x = element_text(angle = 90)) +
+    scale_y_continuous(labels = scales::dollar_format()) +
+    scale_fill_manual(name = "", values = c("dodgerblue", "coral"),
+                      labels = c("Total US Sales", "Revenue from US Premium")) +
+    labs(title = "Portion of Total US Sales Made Up by the US Premium in 2015",
+         x = "Firms",
+         y = "US Dollars (millions)")
+
+
+Us_premium_select <- Us_premium %>% 
+  select(company, us_sales_2015_millions, revenue_from_us_premium) %>% 
+  filter(company == "Biogen") %>%
+  mutate(difference = us_sales_2015_millions - revenue_from_us_premium) %>% 
+  pivot_longer(col = -c(company, us_sales_2015_millions), 
+               names_to = "revenue_source", 
+               values_to = "dollar_amount") %>% 
+  arrange(desc(revenue_source)) %>%
+  mutate(prop = dollar_amount / sum(Us_premium_select$dollar_amount) *100) %>%
+  mutate(ypos = cumsum(prop) - prop* .5)
+
+# US premium revenue as a portion of total US sales revenue for individual firms; alternative to barplot?
+
+
+Us_premium_select %>% 
+  ggplot(aes(x= "", y = dollar_amount , fill = revenue_source)) +
+    geom_bar(stat="identity", width = 1, color= "white") +
+    coord_polar("y", start=0) +
+    theme_void() +
+  
+   # Unsure how to get label positions right
+  
+    geom_text(aes(y = ypos, label = dollar_amount), color = "white", size=6)
+
+# How much of the US premium is excess profits?
+
+Us_premium %>% 
+  ggplot(aes(x =fct_reorder(company, revenues_from_us_prmium_as_percent_of_global_research_and_development), 
+             y = revenues_from_us_prmium_as_percent_of_global_research_and_development,
+         fill = company)) +
+    geom_col() +
+    scale_y_continuous(labels = scales::percent_format()) +
+    geom_hline(yintercept = 1, color = "#2E294E") +
+    geom_hline(yintercept = mean(Us_premium$revenues_from_us_prmium_as_percent_of_global_research_and_development), 
+               color = "#1B998B") +
+    annotate("text", label = "1:1; fair ratio",
+             x = 2.5, y = 1.15, 
+             size = 3, color = "#2E294E") +
+    annotate("text", label = "1.63:1; actual average ratio",
+             x = 3, y = 1.75, 
+             size = 3, color = "#1B998B") +
+    theme(axis.text.x = element_text(angle = 90)) +
+    theme(legend.position = "none") +
+    labs(title = " Average 63% Difference Between US Premium Revenue and R&D Cost Needs, 2015",
+         subtitle = "Pharmaceutical Firms are Making Excess Profits from US Premium at Expense of Patients",
+         x = "Firms",
+         y = "Percentage",
+         caption = "Source: Health Affairs Blog") +
+  theme(plot.title = element_text(size = 12.4))
+
+
+# Spending per capita
+
+oced_countries <- unique(spending_per_cap$location)
+  
+spending_per_cap <- read.csv("spending_per-cap.csv") %>% 
+    clean_names() %>% 
+    select(location, time, value) %>% 
+    rename(country_code = location)
+
+population_data <- read_excel("population_data.xls", skip = 3) %>% 
+  clean_names() %>% 
+  select(country_name, country_code, x2015:x2019) %>% 
+  filter(country_code %in% oced_countries)
+
+pop_spending <- full_join(spending_per_cap, population_data, by = "country_code") %>% 
+  pivot_longer(cols = c(x2015, x2016, x2017), names_to = "year", 
+               values_to = "population") %>% 
+  select(-year)
+
+
+pop_spending %>%  
+  ggplot(aes(country_name, population), color = country_code) +
+    geom_point(size = pop_spending$value *.005) +
+    theme(axis.text.x = element_text(angle = 90)) +
+    transition_states(time,
+                    transition_length = 2,
+                    state_length = 1)
+    
+```
+```{r}
+updated_data <- read_csv("updated_data.csv") 
+
+max_min <- updated_data %>% 
+  group_by(ndc_description) %>% 
+  summarise(min = min(effective_date), max = max(effective_date))
+
+updated_data_2 <- full_join(updated_data, max_min, by = "ndc_description")
+
+data_13 <- read_csv("updated_data.csv") %>% 
+  filter(effective_date == 2013)
+
+data_14 <- updated_data_2 %>% 
+  filter(max == 2014 & effective_date == 2014)
+
+data_15 <- updated_data_2 %>% 
+  filter(max == 2015 & effective_date == 2015)
+data_17 <- updated_data_2 %>% 
+  filter(max == 2017 & effective_date == 2017)
+
+data_18 <- updated_data_2 %>% 
+  filter(max == 2018 & effective_date == 2018)
+
+data_20 <- updated_data_2 %>% 
+  filter(effective_date == 2020)
+
+
+
+data_13_14 <- inner_join(data_13, data_14, by = "ndc_description")
+data_13_15 <- inner_join(data_13, data_15, by = "ndc_description")
+data_13_17 <- inner_join(data_13, data_17, by = "ndc_description")
+data_13_18 <- inner_join(data_13, data_18, by = "ndc_description")
+data_13_20 <- inner_join(data_13, data_20, by = "ndc_description")
+
+merge_1 <- full_join(data_13_14, data_13_15)
+merge_2 <- full_join(data_13_17, data_13_18)
+merge_3 <- full_join(merge_1, merge_2)
+final <- full_join(data_13_20, merge_3)
+
+
+Price_growth <- final %>% 
+  group_by(ndc_description) %>% 
+  summarize(avg_rate = (mean_price.y - mean_price.x)/(max - min),
+            per_chg = ((mean_price.y - mean_price.x)/mean_price.x)*100)
+
+write.csv(Price_growth,"price_growth.csv")
+
+```
+
+
+Model Ideas:
+
+Predict a drug's price using predictors: condition treated, country/healthcare system, producer, # of generic substitutes?
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
