@@ -1,0 +1,13 @@
+name: final_proj
+title: final_proj
+username:
+account: yishak-ali
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3250986
+bundleId: 3936511
+url: https://yishak-ali.shinyapps.io/final_proj/
+when: 1606971548.64855
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: excess_profits_file.gif|outfile.gif|pharma_price_trends.R

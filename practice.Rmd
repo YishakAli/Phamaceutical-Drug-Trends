@@ -11,14 +11,26 @@ library(tidyverse)
 library(janitor)
 library(readxl)
 library(gganimate)
+library(formattable)
+library(ztable)
+library(magrittr)
+library(condformat)
+library(rstanarm)
+library(patchwork)
+library(ggthemes)
+library(gt)
+library(gtsummary)
+library(broom.mixed)
+
 ```
 
 
 
 ```{r}
-Us_premium <- read_excel("US_premium_rd_costs.xlsx") %>% 
+Us_premium <- read_excel("final_proj/US_premium_rd_costs.xlsx") %>% 
   clean_names() %>%
-  mutate(company = as.factor(company))
+  mutate(Company = as.factor(company)) %>% 
+  mutate(Id = 1:15)
 
 # International price as a portion of US prices
 
@@ -117,12 +129,14 @@ Us_premium %>%
 
 # Spending per capita
 
-oced_countries <- unique(spending_per_cap$location)
-  
 spending_per_cap <- read.csv("spending_per-cap.csv") %>% 
     clean_names() %>% 
     select(location, time, value) %>% 
     rename(country_code = location)
+
+oced_countries <- unique(spending_per_cap$location)
+  
+
 
 population_data <- read_excel("population_data.xls", skip = 3) %>% 
   clean_names() %>% 
@@ -142,10 +156,31 @@ pop_spending %>%
     transition_states(time,
                     transition_length = 2,
                     state_length = 1)
+
+g7_spending <- read_csv("final_proj/g7_spending_per_cap.csv") %>% 
+  clean_names() %>% 
+  select(location, time, value) %>% 
+  rename(Country = location)
+
+g7_spending %>% 
+  ggplot(aes(time, value, color = Country)) +
+    labs(title = "Phamaceutical Spending per Capita for G7 Countries, 1970 - 2019",
+         subtitle = "The US's spending per capita is an outlier among similar wealthy, developed nations",
+         x = "Year",
+         y = "Spending per Capita in USD") +
+    scale_y_continuous(labels = scales::dollar_format()) +
+    geom_line() +
+    geom_point() +
+    transition_reveal(time)
+  
     
 ```
+
+
 ```{r}
-updated_data <- read_csv("updated_data.csv") 
+
+#price growth table
+updated_data <- read_csv("final_proj/updated_data.csv") 
 
 max_min <- updated_data %>% 
   group_by(ndc_description) %>% 
@@ -153,7 +188,7 @@ max_min <- updated_data %>%
 
 updated_data_2 <- full_join(updated_data, max_min, by = "ndc_description")
 
-data_13 <- read_csv("updated_data.csv") %>% 
+data_13 <- read_csv("final_proj/updated_data.csv") %>% 
   filter(effective_date == 2013)
 
 data_14 <- updated_data_2 %>% 
@@ -191,13 +226,190 @@ Price_growth <- final %>%
 
 write.csv(Price_growth,"price_growth.csv")
 
+growth <- read_csv("final_proj/price_growth.csv") %>% 
+  select(-X1)
+
+growth %>% 
+  gt() %>%
+  tab_header(title = "Changes in Prices") %>%
+  
+  tab_style(style = list(cell_fill(color = "#EF233C"),
+                         cell_text()),
+            locations = cells_body(columns = vars(per_chg),
+                                   rows = per_chg < 0)) %>%
+  tab_style(style = list(cell_fill(color = "#C7EFCF"),
+                         cell_text()),
+            locations = cells_body(columns = vars(per_chg),
+                                   rows = per_chg > 0 & per_chg < 17)) %>%
+  tab_style(style = list(cell_fill(color = "#88D18A"),
+                         cell_text()),
+            locations = cells_body(columns = vars(per_chg),
+                                   rows = per_chg > 17 & per_chg < 100)) %>% 
+  tab_style(style = list(cell_fill(color = "#04724D"),
+                         cell_text()),
+            locations = cells_body(columns = vars(per_chg),
+                                   rows = per_chg > 100)) %>% 
+   tab_style(style = list(cell_fill(color = "#EF233C"),
+                         cell_text()),
+            locations = cells_body(columns = vars(per_chg),
+                                   rows = per_chg < -5)) %>%
+  tab_style(style = list(cell_fill(color = "#F4796B"),
+                         cell_text()),
+            locations = cells_body(columns = vars(per_chg),
+                                   rows = per_chg < 0 & per_chg > -5)) %>% 
+    tab_style(style = list(cell_fill(color = "#04724D"),
+                         cell_text()),
+            locations = cells_body(columns = vars(avg_rate),
+                                   rows = avg_rate > .4)) %>%
+   tab_style(style = list(cell_fill(color = "#F4796B"),
+                         cell_text()),
+            locations = cells_body(columns = vars(avg_rate),
+                                   rows = avg_rate < 0)) %>%
+  tab_style(style = list(cell_fill(color = "#88D18A"),
+                         cell_text()),
+            locations = cells_body(columns = vars(avg_rate),
+                                   rows = avg_rate > .1 & avg_rate < .4)) %>% 
+  tab_style(style = list(cell_fill(color = "#C7EFCF"),
+                         cell_text()),
+            locations = cells_body(columns = vars(avg_rate),
+                                   rows = avg_rate > 0 & avg_rate < .1))
+  
+  
+  
+ 
+ztable(data.frame(growth)) %>% 
+  addCellColor(condition = per_chg < 0, cols = per_chg, color="red") 
+
+formattable(growth, align = c("l",rep("r", NCOL(growth))), list(
+    ndc_description = formatter("span", style = ~ style(color = "grey",font.weight = "bold")), 
+     area(col = 2:3) ~  if_else(growth$per_chg < 0, color_tile("#DeF7E9", "#71CA97"), color_tile("red", "pink"))))
+?ztable()
+
+?patchwork()
+p1 <- ggplot(mtcars) + geom_point(aes(mpg, disp))
+p2 <- ggplot(mtcars) + geom_boxplot(aes(gear, disp, group = gear))
+
+p1 + p2
+
+```
+
+
+```{r}
+# helpful table for all brand plot
+
+tibble(Brand = c("Amoxicillin", "Cozaar", "Glucophage",
+                 "Lipitor", "Neurontin", "Norvasc",
+                 "Prilosec", "Prinivil", "Synthroid", "Zocor"),
+       `Condition Treated` = c("Bacterial infection","Hypertension", "Diabetes",
+                               "High cholesterol", "Seizures, Nerve pain",
+                               "Hypertension", "Acid reflex/Heartburn, Ulcers",
+                               "Hypertension, Heart Failure", "Hypothyroidism",
+                               "High cholesterol")) %>% 
+  gt() %>% 
+  tab_style(style = list(cell_fill(color = "lightblue"),
+                         cell_text(weight = "bold")),
+            locations = cells_column_labels(columns = vars(Brand, `Condition Treated`))) %>% 
+  cols_align(align = "center",
+             columns = vars(`Condition Treated`))
 ```
 
 
 Model Ideas:
 
-Predict a drug's price using predictors: condition treated, country/healthcare system, producer, # of generic substitutes?
+Predict a drug's price using predictors: condition treated, country/healthcare system, producer, # of generic substitutes, and per capita spending 
+
+```{r}
+test <- read_excel("test_price_predictor.xlsx") %>% 
+  clean_names() %>% 
+  pivot_longer(cols = usa_cost:turkey_cost, names_to = "country",
+               values_to = "cost")
+
+fit <- stan_glm(data = test, formula = cost ~ country + firm + class + country_produced,
+         refresh = 0)
+
+new_obj <- tibble(country = c("usa_cost", "india_cost"), firm = "Pfizer", class = "mental",
+                  country_produced = "USA")
 
 
+
+posterior_predict(fit, newdata = new_obj) %>% 
+  as_tibble() %>% 
+   mutate_all(as.numeric) %>% 
+   rename(usa = 1, india = 2) %>% 
+   pivot_longer(cols = usa:india, names_to = "country",
+                values_to = "cost") %>% 
+  ggplot(aes(cost, fill = country)) +
+    geom_histogram(aes(y = after_stat(count/sum(count))),bins = 100)
+
+```
+
+```{r}
+# trends by therapeutic class
+
+expend_by_class <- read.csv("total_expenditure_by_class.csv") %>% 
+  clean_names() %>% 
+  pivot_longer(cols = -therapeutic_class, names_to = "year",
+               values_to = "expenditure") %>% 
+   mutate(year = as.numeric(str_sub(year, 2L)))
+
+purchase_by_class <- read.csv("total_purchases_by_class.csv") %>% 
+  clean_names() %>% 
+  pivot_longer(cols = -therapeutic_class, names_to = "year",
+               values_to = "purchases") %>% 
+   mutate(year = as.numeric(str_sub(year, 2L)))
+  
+
+therapeutic_classes <-full_join(expend_by_class, purchase_by_class, by = c("therapeutic_class", "year"))
+
+therapeutic_classes <- write.csv(therapeutic_classes, file = "therapeutic_classes.csv")
+
+therapeutic_classes %>% 
+  # filter(therapeutic_class) %>% 
+  group_by(therapeutic_class, year) %>% 
+  summarize(expend_per_purchase = log((expenditure*1000000)/(1000*purchases))) %>% 
+  drop_na() %>% 
+  ggplot(aes(year, expend_per_purchase, color = therapeutic_class)) +
+    geom_line() +
+    theme(legend.title = element_text(size = 5), 
+          legend.text = element_text(size = 5),
+          legend.position = "bottom") + 
+   stat_summary(fun.y=mean, aes(group=1), geom="line", colour="darkblue", size = 1.2, lty = 3)
+
+  
+
+```
+
+```{r}
+international <- read_excel("final_proj/Lowest_Price_Per_Unit_for_Top_200_drugs.xlsx") %>% 
+  clean_names() %>% 
+  group_by(drug_name) %>% 
+  filter(price_per_unit == min(price_per_unit)) %>% 
+  select(drug_name, price_per_unit, country, strength) %>% 
+  mutate(region = "International")
+
+write_csv(international,file = "international_prices.csv")
+  
+international %>% 
+  select(drug_name, strength)
+
+final_set <- read_csv("final_proj/international_prices.csv") %>% 
+  clean_names() %>% 
+  pivot_longer(cols = c("int_price_per_unit", "usa_price_per_unit"),
+               names_to = "location", values_to = "price") %>% 
+  select(drug_name, condition, type, total_options, price, location) 
+
+fit_model <- stan_glm(formula = price ~ condition + type + total_options + location + total_options*type,
+         data = final_set, refresh = 0)
+
+  
+tbl_regression(fit_model, intercept = T) %>% 
+  as_gt() %>% 
+  tab_header(title = "Regression of Drug Prices" ,
+             subtitle = "The Effect of Various Predictors on Prices") %>% 
+  tab_source_note(md("Source: PharmacyChecker & Good Rx"))
+  
+
+  
+```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

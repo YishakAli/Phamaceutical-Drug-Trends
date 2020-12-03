@@ -1,0 +1,12 @@
+name: phrama_price_trends
+title: phrama_price_trends
+username:
+account: yishak-ali
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3185052
+bundleId: 3831791
+url: https://yishak-ali.shinyapps.io/phrama_price_trends/
+when: 1604767443.21507
+asMultiple: FALSE
+asStatic: FALSE
