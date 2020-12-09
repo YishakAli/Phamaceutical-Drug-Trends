@@ -363,8 +363,14 @@ therapeutic_classes <-full_join(expend_by_class, purchase_by_class, by = c("ther
 
 therapeutic_classes <- write.csv(therapeutic_classes, file = "therapeutic_classes.csv")
 
-therapeutic_classes %>% 
-  # filter(therapeutic_class) %>% 
+therapeutic_classes_final <- read_csv("final_proj/therapeutic_classes.csv")
+
+therapeutic_list <- therapeutic_classes_final %>% 
+    pull(therapeutic_class) %>% 
+    unique()
+
+therapeutic_classes_final %>% 
+  filter(therapeutic_class %in% therapeutic_list) %>% 
   group_by(therapeutic_class, year) %>% 
   summarize(expend_per_purchase = log((expenditure*1000000)/(1000*purchases))) %>% 
   drop_na() %>% 
@@ -373,9 +379,27 @@ therapeutic_classes %>%
     theme(legend.title = element_text(size = 5), 
           legend.text = element_text(size = 5),
           legend.position = "bottom") + 
-   stat_summary(fun.y=mean, aes(group=1), geom="line", colour="darkblue", size = 1.2, lty = 3)
+   stat_summary(fun.y=mean, aes(group=1), geom="line", colour="darkblue", size = 1.2, lty = 3) +
+  theme_clean()
 
-  
+
+  therapeutic_classes_final %>%
+            rename(`Therapeutic Class` = therapeutic_class) %>% 
+            drop_na() %>% 
+            # filter(`Therapeutic Class` %in% input$select_class,
+            #        year %in% input$select_year) %>%
+            group_by(`Therapeutic Class`, year) %>% 
+            summarize(expend_per_purchase = log((expenditure*1000000)/(1000*purchases))) %>% 
+            ggplot(aes(x = year, y = expend_per_purchase, color = `Therapeutic Class`)) +
+            geom_line() +
+            stat_summary(fun.y=mean, aes(group = 1), geom="line", colour="darkblue", size = 1.2, lty = 3) +
+            labs(title = "Log Expenditure per Purchase by Therapeutic Class",
+                 x = "Year",
+                 y = "Log Expenditure per Purchase") +
+            theme_clean() +
+            theme(legend.title = element_text(size = 6), 
+                  legend.text = element_text(size = 6),
+                  legend.position = "right") 
 
 ```
 
@@ -396,9 +420,9 @@ final_set <- read_csv("final_proj/international_prices.csv") %>%
   clean_names() %>% 
   pivot_longer(cols = c("int_price_per_unit", "usa_price_per_unit"),
                names_to = "location", values_to = "price") %>% 
-  select(drug_name, condition, type, total_options, price, location) 
+  select(drug_name, condition, type, total_options, num_subs, price, location) 
 
-fit_model <- stan_glm(formula = price ~ condition + type + total_options + location + total_options*type,
+fit_model <- stan_glm(formula = price ~ type + num_subs + location,
          data = final_set, refresh = 0)
 
   
@@ -407,9 +431,96 @@ tbl_regression(fit_model, intercept = T) %>%
   tab_header(title = "Regression of Drug Prices" ,
              subtitle = "The Effect of Various Predictors on Prices") %>% 
   tab_source_note(md("Source: PharmacyChecker & Good Rx"))
+
+obj <- tibble(type = c("brand", "generic"),
+              num_subs = 1, location = "usa_price_per_unit")
+  
+predict <- posterior_predict(fit_model, newdata = obj) %>% 
+  as_tibble() %>% 
+   mutate_all(as.numeric) %>% 
+   rename(brand = 1, generic = 2)
+
+brand_mean <- mean(predict$brand)
+generic_mean <- mean(predict$generic)
+
+predict %>% 
+   pivot_longer(cols = brand:generic, names_to = "type",
+                values_to = "cost") %>% 
+  ggplot(aes(cost, fill = type)) +
+    geom_histogram(aes(y = after_stat(count/sum(count))),bins = 100) +
+    geom_vline(xintercept = brand_mean, lty = 2) +
+    geom_vline(xintercept = generic_mean, lty = 2,
+               color = "purple") +
+    labs(title = "Predicted Average Cost for Brand vs Generic \n",
+         x = "Average Cost",
+         y = "Probability") +
+    theme_minimal() +
+     scale_fill_manual(values = c("coral", "green"), 
+                      labels = c("Generic", "Brand"),
+                      name = "Type")
+
+obj_2 <- tibble(type = "brand",
+              num_subs = 1, location = c("usa_price_per_unit", "int_price_per_unit"))
+              
+predict_2 <- posterior_predict(fit_model, newdata = obj_2) %>% 
+  as_tibble() %>% 
+   mutate_all(as.numeric) %>% 
+   rename(usa = 1, international = 2) 
+
+usa_mean <- mean(predict_2$usa)
+int_mean <- mean(predict_2$international)
+
+predict_2 %>% 
+   pivot_longer(cols = usa:international, names_to = "location",
+                values_to = "cost") %>% 
+  ggplot(aes(cost, fill = location)) +
+    geom_histogram(aes(y = after_stat(count/sum(count))),bins = 100) +
+    geom_vline(xintercept = usa_mean, lty = 2,
+               color = "white") + 
+    geom_vline(xintercept = int_mean, lty = 2,
+               color = "red") + 
+    labs(title = "Predicted Average Cost for International vs US Bought \n",
+         x = "Average Cost", y = "Probability") +
+    theme_minimal() +
+    scale_fill_manual(values = c("pink", "dodgerblue"), 
+                      labels = c("International", "US"),
+                      name = "Location")
+
+
+obj_3 <- tibble(type = "brand",
+              num_subs = c(1,2,3), location = "usa_price_per_unit")
+
+predict_3 <- posterior_predict(fit_model, newdata = obj_3) %>% 
+  as_tibble() %>% 
+  mutate_all(as.numeric) %>% 
+  rename(one = 1, two = 2, three = 3) 
+
+one_mean <- mean(predict_3$one)
+two_mean <- mean(predict_3$two)
+three_mean <- mean(predict_3$three)
+
+predict_3 %>% 
+   pivot_longer(cols = c(one, two, three), names_to = "Subs",
+                values_to = "cost") %>% 
+  ggplot(aes(cost, fill = Subs)) +
+    geom_histogram(aes(y = after_stat(count/sum(count))),bins = 100) +
+    geom_vline(xintercept = one_mean, lty = 1,
+               color = "green") + 
+    geom_vline(xintercept = two_mean, lty = 2,
+               color = "purple") +
+    geom_vline(xintercept = three_mean, lty = 3,
+               color = "brown") +
+    labs(title = "Predicted Average Costs for Varying Number of Drug Alternatives \n" ,
+         x = "Average Cost", y = "Probability") +
+    theme_minimal() +
+    scale_fill_manual(values = c("coral", "green", "blue"), 
+                      labels = c("one", "two", "three"),
+                      name = "Alternative")
+
+tibble(Alternatives = 1:3, `Average Cost ($)` = c(one_mean, two_mean, three_mean))
   
 
-  
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

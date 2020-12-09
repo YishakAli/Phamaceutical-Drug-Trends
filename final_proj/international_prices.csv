@@ -1,87 +1,87 @@
-drug_name,int_price_per_unit,country,strength,region,usa_price_per_unit,condition,type,total options
-Abilify,1.333333333,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",5,International,22.66,psychosis,brand,2
-Abiraterone,4.948416667,"India, UK",250,International,6.74,prostate cancer,generic,2
-Amlodipine Besylate,0.123888889,India,2.5,International,0.26,cardiovascular issues,generic,3
-Amoxicillin,0.131777778,India,250,International,0.13,bacterial/viral infection,generic,2
-Anoro Ellipta,2.549444444,"Australia, Canada, Mauritius, NZ, UK",62.5/25,International,8.63,COPD,brand,1
-Aripiprazole,0.175666667,"India, UK",5,International,0.77,psychosis,generic,2
-Atorvastatin,0.154761905,"Canada, India, Mauritius, NZ, Turkey, UK",20,International,0.29,cholesterol,generic,2
-Augmentin,0.666555556,"Australia, Canada, India, NZ, UK",500,International,17.91,bacterial/viral infection,brand,2
-Azithromycin,0.590555556,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",250,International,1.68,bacterial/viral infection,generic,2
-Breo Ellipta,1.811,"Australia, Canada, Mauritius, NZ, UK",100/25,International,6.07,COPD,brand,1
-Brilinta,1.178571429,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",90,International,6.32,cardiovascular issues,brand,1
-Bupropion,0.311,"Australia, Canada, Mauritius, NZ, UK",150,International,0.41,depression,generic,2
-Bupropion XL,0.338888889,Canada,150,International,0.54,depression,generic,2
-Bystolic,0.341547619,"Australia, Canada, Mauritius, NZ, UK",5,International,5.07,high blood pressure,brand,1
-Celecoxib,0.166722222,"Australia, Canada, Mauritius, NZ, UK",100,International,0.26,arthritis,generic,2
-Cellcept,0.758555556,"India, UK",250,International,0.72,reduce immune response,generic,2
-Cialis,3.323928571,"Australia, Canada, Mauritius, NZ, UK",5,International,11.99,erectile dysfunction,brand,2
-Combivent Respimat,0.313888889,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",20/100,International,3.63,COPD,brand,1
-Crestor,0.206333333,"India, UK",5,International,0.33,cholesterol,generic,2
-cyclosporine (Restasis),10.88888889,"Australia, Canada, Mauritius, NZ, UK",0.05,International,15.39,reduce immune response,generic,2
-Dexilant,2.427222222,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",60,International,9.53,acid reflux,brand,1
-Duloxetine,0.171547619,"Australia, Canada, Mauritius, NZ, UK",30,International,0.37,depression,generic,2
-Eliquis,0.82077381,"Australia, Canada, Mauritius, NZ, UK",2.5,International,7.77,stroke,brand,1
-Elmiron,1.483111111,"India, UK",100,International,9.68,bladder issues,brand,1
-Entresto,2.244821429,"Australia, Canada, Mauritius, NZ, UK",24/26,International,9.36,cardiovascular issues,brand,1
-Escitalopram,0.158,"India, UK",5,International,0.4,depression,generic,2
-Esomeprazole,0.156222222,"India, UK",20,International,0.67,acid reflux,generic,2
-Estrace,0.3,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",0.5,International,5.86,menopuase symptoms,brand,7
-ESTRADIOL,0.23202381,"India, UK",1,International,0.18,menopuase symptoms,generic,7
-Estring Vaginal Ring,71,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",2,International,479,menopuase symptoms,brand,1
-Exforge,0.809404762,"Australia, Canada, Mauritius, NZ, UK",10/160,International,10.6,high blood pressure,brand,2
-Ezetimibe,0.169555556,India,10,International,0.41,cholesterol,generic,2
-Farxiga,1.561547619,"Australia, Canada, Mauritius, NZ, UK",5,International,16.52,diabetes,brand,1
-Flecainide Acetate,0.204722222,"Australia, Canada, Mauritius, NZ, UK",50,International,0.35,cardiovascular issues,generic,2
-Gabapentin,0.131111111,India,100,International,0.51,seizures,generic,2
-Glucophage,0.31,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",850,International,4.26,diabetes,brand,2
-Invokana,2.289444444,"Australia, Canada, Mauritius, NZ, UK",100,International,17.63,diabetes,brand,1
-Janumet,0.502666667,"India, UK",50/500,International,7.83,diabetes,brand,1
-Januvia,0.630952381,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",50,International,16.11,diabetes,brand,1
-Jardiance,1.369444444,"Australia, Canada, Mauritius, NZ, UK",10,International,17.76,diabetes,brand,1
-Lamictal,0.3075,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",2,International,0.25,seizures,brand,2
-Lamotrigine,0.183222222,"India, UK",25,International,0.09,seizures,generic,2
-Latuda,3,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",40,International,44.76,psychosis,brand,1
-Levitra,1.131789286,"India, UK",5,International,59.2,erectile dysfunction,brand,2
-Levothyroxine,0.1389,"India, UK",100,International,0.14,hypothyroidism,generic,6
-Linzess,3.981547619,"Australia, Canada, Mauritius, NZ, UK",290,International,15.73,IBS,brand,1
-Lipitor,0.299444444,"Australia, Canada, Mauritius, NZ, UK",10,International,11.12,cholesterol,brand,1
-Lisinopril,0.134,"India, UK",2.5,International,0.1,high blood pressure,generic,3
-Livalo,0.688333333,"Australia, Canada, Mauritius, NZ, UK",2,International,10.63,cholesterol,brand,0
-Losartan,0.123,"India, UK",25,International,0.35,high blood pressure,generic,2
-Metformin,0.074964286,"Australia, Canada, Mauritius, NZ, UK",850,International,0.06,diabetes,generic,3
-Mexiletine,1.05,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",200,International,3.99,cardiovascular issues,generic,2
-Mirabegron,0.866333333,"Australia, Canada, Mauritius, NZ, UK",25,International,13.81,bladder issues,brand,1
-Nardil,0.583333333,"Australia, Canada, India, Mauritius, NZ, UK",15,International,2.67,depression,brand,2
-Nebivolol,0.202888889,India,2.5,International,4.92,high blood pressure,brand,1
-Nexium,0.290714286,"Australia, Canada, Mauritius, NZ, UK",40,International,9.06,acid reflux,brand,2
-Pantoprazole,0.15495,"Australia, Canada, Mauritius, NZ, UK",40,International,0.34,acid reflux,generic,2
-Plaquenil,0.3255,"Australia, Canada, Mauritius, NZ, UK",200,International,10.58,arthritis,brand,2
-Pradaxa,0.789166667,"Australia, Canada, Mauritius, NZ, UK",75,International,0.13,stroke,brand,1
-Premarin,0.261904762,"Canada, India, Mauritius, NZ, Turkey, UK",0.625,International,6.16,menopuase symptoms,brand,1
-Propranolol,0.113555556,"India, UK",40,International,0.38,high blood pressure,generic,2
-Ranolazine,0.324333333,India,500,International,0.92,cardiovascular issues,generic,2
-Rifaximin,0.3395,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",200,International,22.73,IBS,brand,1
-Rosuvastatin Calcium,0.1799,"Australia, Canada, Mauritius, NZ, UK",10,International,0.19,cholesterol,generic,2
-Rybelsus,10.5,Canada,14,International,27.39,diabetes,brand,1
-Sildenafil,0.215909091,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",100,International,1.28,erectile dysfunction,generic,3
-Simvastatin,0.05,"Australia, Canada, Mauritius, NZ, UK",10,International,0.18,cholesterol,generic,3
-Spiriva HandiHaler,0.617111111,"Australia, Canada, Mauritius, NZ, UK",18,International,15.29,COPD,brand,0
-Synthroid,0.144444444,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",50,International,1.45,hypothyroidism,brand,5
-Tadalafil,0.32875,India,20,International,1.28,erectile dysfunction,generic,2
-Temozolomide,6.666,"Australia, Canada, India, NZ, UK",5,International,1.47,chemotherapy,generic,2
-Tradjenta,1.379444444,"Australia, Canada, Mauritius, NZ, UK",5,International,15.74,diabetes,brand,1
-Trazodone,0.138222222,"India, UK",50,International,0.14,depression,generic,3
-Vagifem,0.766111111,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",25,International,16.18,menopuase symptoms,brand,3
-Valtrex,1.069444444,"Australia, Canada, Mauritius, NZ, UK",500,International,12.78,bacterial/viral infection,brand,2
-Vardenafil,0.422222222,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",20,International,14.26,erectile dysfunction,generic,3
-Vascepa,1.486517857,"Australia, Canada, India, NZ, UK",1,International,2.81,cardiovascular issues,brand,2
-Viagra,6.102272727,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",100,International,65.82,erectile dysfunction,brand,2
-Vraylar,12.1547619,"Australia, Canada, Mauritius, NZ, UK",3,International,41.36,psychosis,brand,1
-Warfarin,0.142222222,"India, UK",2,International,0.6,cardiovascular issues,generic,3
-Wellbutrin XL,0.583333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",150,International,50.24,depression,brand,3
-Xarelto,1.306964286,"India, UK",10,International,15.78,cardiovascular issues,brand,1
-Xeljanz,12.66660714,"Australia, Canada, India, NZ, UK",5,International,80.4,arthritis,brand,1
-Xifaxan,3.083333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",200,International,22.73,IBS,brand,1
-Zyprexa,1.17,"Australia, Canada, Mauritius, NZ, UK",10,International,21.85,psychosis,brand,2
-Zytiga,31.575,"Canada, India, Mauritius, NZ, Turkey, UK",250,International,92.27,prostate cancer,brand,2
+drug_name,int_price_per_unit,country,strength,region,usa_price_per_unit,condition,type,total options,num_subs
+Abilify,1.333333333,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",5,International,22.66,psychosis,brand,2,1
+Abiraterone,4.948416667,"India, UK",250,International,6.74,prostate cancer,generic,2,1
+Amlodipine Besylate,0.123888889,India,2.5,International,0.26,cardiovascular issues,generic,3,2
+Amoxicillin,0.131777778,India,250,International,0.13,bacterial/viral infection,generic,2,1
+Anoro Ellipta,2.549444444,"Australia, Canada, Mauritius, NZ, UK",62.5/25,International,8.63,COPD,brand,1,0
+Aripiprazole,0.175666667,"India, UK",5,International,0.77,psychosis,generic,2,1
+Atorvastatin,0.154761905,"Canada, India, Mauritius, NZ, Turkey, UK",20,International,0.29,cholesterol,generic,2,1
+Augmentin,0.666555556,"Australia, Canada, India, NZ, UK",500,International,17.91,bacterial/viral infection,brand,2,1
+Azithromycin,0.590555556,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",250,International,1.68,bacterial/viral infection,generic,2,1
+Breo Ellipta,1.811,"Australia, Canada, Mauritius, NZ, UK",100/25,International,6.07,COPD,brand,1,0
+Brilinta,1.178571429,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",90,International,6.32,cardiovascular issues,brand,1,0
+Bupropion,0.311,"Australia, Canada, Mauritius, NZ, UK",150,International,0.41,depression,generic,2,1
+Bupropion XL,0.338888889,Canada,150,International,0.54,depression,generic,2,1
+Bystolic,0.341547619,"Australia, Canada, Mauritius, NZ, UK",5,International,5.07,high blood pressure,brand,1,0
+Celecoxib,0.166722222,"Australia, Canada, Mauritius, NZ, UK",100,International,0.26,arthritis,generic,2,1
+Cellcept,0.758555556,"India, UK",250,International,0.72,reduce immune response,generic,2,1
+Cialis,3.323928571,"Australia, Canada, Mauritius, NZ, UK",5,International,11.99,erectile dysfunction,brand,2,1
+Combivent Respimat,0.313888889,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",20/100,International,3.63,COPD,brand,1,0
+Crestor,0.206333333,"India, UK",5,International,0.33,cholesterol,generic,2,1
+cyclosporine (Restasis),10.88888889,"Australia, Canada, Mauritius, NZ, UK",0.05,International,15.39,reduce immune response,generic,2,1
+Dexilant,2.427222222,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",60,International,9.53,acid reflux,brand,1,0
+Duloxetine,0.171547619,"Australia, Canada, Mauritius, NZ, UK",30,International,0.37,depression,generic,2,1
+Eliquis,0.82077381,"Australia, Canada, Mauritius, NZ, UK",2.5,International,7.77,stroke,brand,1,0
+Elmiron,1.483111111,"India, UK",100,International,9.68,bladder issues,brand,1,0
+Entresto,2.244821429,"Australia, Canada, Mauritius, NZ, UK",24/26,International,9.36,cardiovascular issues,brand,1,0
+Escitalopram,0.158,"India, UK",5,International,0.4,depression,generic,2,1
+Esomeprazole,0.156222222,"India, UK",20,International,0.67,acid reflux,generic,2,1
+Estrace,0.3,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",0.5,International,5.86,menopuase symptoms,brand,7,6
+ESTRADIOL,0.23202381,"India, UK",1,International,0.18,menopuase symptoms,generic,7,6
+Estring Vaginal Ring,71,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",2,International,479,menopuase symptoms,brand,1,0
+Exforge,0.809404762,"Australia, Canada, Mauritius, NZ, UK",10/160,International,10.6,high blood pressure,brand,2,1
+Ezetimibe,0.169555556,India,10,International,0.41,cholesterol,generic,2,1
+Farxiga,1.561547619,"Australia, Canada, Mauritius, NZ, UK",5,International,16.52,diabetes,brand,1,0
+Flecainide Acetate,0.204722222,"Australia, Canada, Mauritius, NZ, UK",50,International,0.35,cardiovascular issues,generic,2,1
+Gabapentin,0.131111111,India,100,International,0.51,seizures,generic,2,1
+Glucophage,0.31,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",850,International,4.26,diabetes,brand,2,1
+Invokana,2.289444444,"Australia, Canada, Mauritius, NZ, UK",100,International,17.63,diabetes,brand,1,0
+Janumet,0.502666667,"India, UK",50/500,International,7.83,diabetes,brand,1,0
+Januvia,0.630952381,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",50,International,16.11,diabetes,brand,1,0
+Jardiance,1.369444444,"Australia, Canada, Mauritius, NZ, UK",10,International,17.76,diabetes,brand,1,0
+Lamictal,0.3075,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",2,International,0.25,seizures,brand,2,1
+Lamotrigine,0.183222222,"India, UK",25,International,0.09,seizures,generic,2,1
+Latuda,3,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",40,International,44.76,psychosis,brand,1,0
+Levitra,1.131789286,"India, UK",5,International,59.2,erectile dysfunction,brand,2,1
+Levothyroxine,0.1389,"India, UK",100,International,0.14,hypothyroidism,generic,6,5
+Linzess,3.981547619,"Australia, Canada, Mauritius, NZ, UK",290,International,15.73,IBS,brand,1,0
+Lipitor,0.299444444,"Australia, Canada, Mauritius, NZ, UK",10,International,11.12,cholesterol,brand,1,0
+Lisinopril,0.134,"India, UK",2.5,International,0.1,high blood pressure,generic,3,2
+Livalo,0.688333333,"Australia, Canada, Mauritius, NZ, UK",2,International,10.63,cholesterol,brand,1,0
+Losartan,0.123,"India, UK",25,International,0.35,high blood pressure,generic,2,1
+Metformin,0.074964286,"Australia, Canada, Mauritius, NZ, UK",850,International,0.06,diabetes,generic,3,2
+Mexiletine,1.05,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",200,International,3.99,cardiovascular issues,generic,2,1
+Mirabegron,0.866333333,"Australia, Canada, Mauritius, NZ, UK",25,International,13.81,bladder issues,brand,1,0
+Nardil,0.583333333,"Australia, Canada, India, Mauritius, NZ, UK",15,International,2.67,depression,brand,2,1
+Nebivolol,0.202888889,India,2.5,International,4.92,high blood pressure,brand,1,0
+Nexium,0.290714286,"Australia, Canada, Mauritius, NZ, UK",40,International,9.06,acid reflux,brand,2,1
+Pantoprazole,0.15495,"Australia, Canada, Mauritius, NZ, UK",40,International,0.34,acid reflux,generic,2,
+Plaquenil,0.3255,"Australia, Canada, Mauritius, NZ, UK",200,International,10.58,arthritis,brand,2,1
+Pradaxa,0.789166667,"Australia, Canada, Mauritius, NZ, UK",75,International,0.13,stroke,brand,1,0
+Premarin,0.261904762,"Canada, India, Mauritius, NZ, Turkey, UK",0.625,International,6.16,menopuase symptoms,brand,1,0
+Propranolol,0.113555556,"India, UK",40,International,0.38,high blood pressure,generic,2,1
+Ranolazine,0.324333333,India,500,International,0.92,cardiovascular issues,generic,2,1
+Rifaximin,0.3395,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",200,International,22.73,IBS,brand,1,0
+Rosuvastatin Calcium,0.1799,"Australia, Canada, Mauritius, NZ, UK",10,International,0.19,cholesterol,generic,2,1
+Rybelsus,10.5,Canada,14,International,27.39,diabetes,brand,1,0
+Sildenafil,0.215909091,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",100,International,1.28,erectile dysfunction,generic,3,2
+Simvastatin,0.05,"Australia, Canada, Mauritius, NZ, UK",10,International,0.18,cholesterol,generic,3,2
+Spiriva HandiHaler,0.617111111,"Australia, Canada, Mauritius, NZ, UK",18,International,15.29,COPD,brand,1,0
+Synthroid,0.144444444,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",50,International,1.45,hypothyroidism,brand,5,4
+Tadalafil,0.32875,India,20,International,1.28,erectile dysfunction,generic,2,1
+Temozolomide,6.666,"Australia, Canada, India, NZ, UK",5,International,1.47,chemotherapy,generic,2,1
+Tradjenta,1.379444444,"Australia, Canada, Mauritius, NZ, UK",5,International,15.74,diabetes,brand,1,0
+Trazodone,0.138222222,"India, UK",50,International,0.14,depression,generic,3,2
+Vagifem,0.766111111,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",25,International,16.18,menopuase symptoms,brand,3,2
+Valtrex,1.069444444,"Australia, Canada, Mauritius, NZ, UK",500,International,12.78,bacterial/viral infection,brand,2,1
+Vardenafil,0.422222222,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",20,International,14.26,erectile dysfunction,generic,3,2
+Vascepa,1.486517857,"Australia, Canada, India, NZ, UK",1,International,2.81,cardiovascular issues,brand,2,1
+Viagra,6.102272727,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",100,International,65.82,erectile dysfunction,brand,2,1
+Vraylar,12.1547619,"Australia, Canada, Mauritius, NZ, UK",3,International,41.36,psychosis,brand,1,0
+Warfarin,0.142222222,"India, UK",2,International,0.6,cardiovascular issues,generic,3,2
+Wellbutrin XL,0.583333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",150,International,50.24,depression,brand,3,2
+Xarelto,1.306964286,"India, UK",10,International,15.78,cardiovascular issues,brand,1,0
+Xeljanz,12.66660714,"Australia, Canada, India, NZ, UK",5,International,80.4,arthritis,brand,1,0
+Xifaxan,3.083333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",200,International,22.73,IBS,brand,1,0
+Zyprexa,1.17,"Australia, Canada, Mauritius, NZ, UK",10,International,21.85,psychosis,brand,2,1
+Zytiga,31.575,"Canada, India, Mauritius, NZ, Turkey, UK",250,International,92.27,prostate cancer,brand,2,1

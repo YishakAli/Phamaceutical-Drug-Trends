@@ -1,0 +1,188 @@
+drug_name,price_per_unit,country,strength,region
+Abilify,1.33333333333333,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",5,International
+Abiraterone,4.94841666666667,"India, UK",250,International
+Acyclovir,0,"Australia, Canada, NZ, UK",5,International
+Advair Diskus,0.307555555555556,"Australia, Canada, Mauritius, NZ, UK",100/50,International
+Afinitor,37.7555555555556,"Canada, India, Mauritius, NZ, Turkey, UK",5,International
+Albendazole,0.541583333333333,"Australia, Canada, India, NZ, UK",400,International
+Albuterol,0.0334166666666667,"Australia, Canada, Mauritius, NZ, UK",90,International
+Amlodipine Besylate,0.123888888888889,India,2.5,International
+Amoxicillin,0.131777777777778,India,250,International
+Anoro Ellipta,2.54944444444444,"Australia, Canada, Mauritius, NZ, UK",62.5/25,International
+Apixaban,0.631222222222222,"Australia, Canada, Mauritius, NZ, UK",2.5,International
+Apoquel,1.4462,"India, UK",3.6,International
+Apoquel,1.4462,"India, UK",5.4,International
+Aripiprazole,0.175666666666667,"India, UK",5,International
+Armour Thyroid,0.35,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",30,International
+Asacol,0.622111111111111,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",400,International
+Atorvastatin,0.154761904761905,"Canada, India, Mauritius, NZ, Turkey, UK",20,International
+Augmentin,0.666555555555556,"Australia, Canada, India, NZ, UK",500,International
+Avamys Nasal Spray,0.216388888888889,"Australia, Canada, India, NZ, UK",27.5,International
+Azithromycin,0.59055555555555606,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",250,International
+Baraclude,8.211,"Australia, Canada, India, NZ, UK",0.5,International
+Betahistine,0.190222222222222,"India, UK",8,International
+Bimatoprost,3.31444444444444,"Australia, Canada, Mauritius, NZ, UK",1,International
+Breo Ellipta,1.811,"Australia, Canada, Mauritius, NZ, UK",100/25,International
+Brilinta,1.17857142857143,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",90,International
+Budesonide,0.05415,"Australia, Canada, Mauritius, NZ, UK",100,International
+Bupropion,0.311,"Australia, Canada, Mauritius, NZ, UK",150,International
+Bupropion,0.311,"Australia, Canada, Mauritius, NZ, UK",150,International
+Bupropion XL,0.338888888888889,Canada,150,International
+Bystolic,0.341547619047619,"Australia, Canada, Mauritius, NZ, UK",5,International
+Celecoxib,0.166722222222222,"Australia, Canada, Mauritius, NZ, UK",100,International
+Cellcept,0.758555555555556,"India, UK",250,International
+Chantix,1.47,"India, UK",0.5/1,International
+Cialis,3.32392857142857,"Australia, Canada, Mauritius, NZ, UK",5,International
+Colchicine,0.295,"Australia, Canada, India, Mauritius, NZ, UK",0.5,International
+Combivent Respimat,0.313888888888889,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",20/100,International
+Creon,0.32,"Australia, Canada, Mauritius, NZ, UK",25000,International
+Crestor,0.206333333333333,"India, UK",5,International
+cyclosporine (Restasis),10.8888888888889,"Australia, Canada, Mauritius, NZ, UK",0.05,International
+Dexilant,2.42722222222222,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",60,International
+Dexlansoprazole,0.877666666666667,"Australia, Canada, Mauritius, NZ, UK",60,International
+Domperidone,0.14,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",10,International
+Dostinex,4.11541666666667,"Australia, Canada, Mauritius, NZ, UK",0.5,International
+Duloxetine,0.171547619047619,"Australia, Canada, Mauritius, NZ, UK",30,International
+Eliquis,0.820773809523809,"Australia, Canada, Mauritius, NZ, UK",2.5,International
+Elmiron,1.48311111111111,"India, UK",100,International
+Entresto,2.24482142857143,"Australia, Canada, Mauritius, NZ, UK",24/26,International
+ENTRESTO,2.19035714285714,"Australia, Canada, India, NZ, UK",49/51,International
+Esbriet,9.21851851851852,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",267,International
+Escitalopram,0.158,"India, UK",5,International
+Esomeprazole,0.156222222222222,"India, UK",20,International
+Estrace,0.3,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",0.5,International
+Estrace Vaginal Cream,8.44705882352941,"Australia, Canada, India, Mauritius, NZ, UK",0.01,International
+ESTRADIOL,0.232023809523809,"India, UK",1,International
+Estring Vaginal Ring,71,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",2,International
+Estring Vaginal Ring,71,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",2,International
+Exforge,0.809404761904762,"Australia, Canada, Mauritius, NZ, UK",10/160,International
+Ezetimibe,0.169555555555556,India,10,International
+Farxiga,1.56154761904762,"Australia, Canada, Mauritius, NZ, UK",5,International
+Febuxostat,0.2795,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",40,International
+Finasteride,0.15,"Canada, India, Mauritius, NZ, Turkey, UK",1,International
+Flecainide Acetate,0.204722222222222,"Australia, Canada, Mauritius, NZ, UK",50,International
+Flovent,0.172222222222222,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",50,International
+Flovent HFA,0.0831388888888889,"Australia, Canada, Mauritius, NZ, UK",50,International
+Fluoxetine,0.1125,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",10,International
+Fluticasone,0.175,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",125,International
+Fluticasone Propionate,0.133311111111111,"Australia, Canada, Mauritius, NZ, UK",50,International
+Forxiga,1.7022619047619,"Australia, Canada, India, NZ, UK",5,International
+Gabapentin,0.131111111111111,India,100,International
+Galvus Met,0.833333333333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",50/1000,International
+Gleevec,12.9222222222222,"Canada, India, Mauritius, NZ, Turkey, UK",400,International
+Glucophage,0.31,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",850,International
+Inlyta,21.3832142857143,"India, UK",1,International
+Invokana,2.28944444444444,"Australia, Canada, Mauritius, NZ, UK",100,International
+Jakavi,51.5951785714286,"Australia, Canada, India, NZ, UK",5,International
+Janumet,0.502666666666667,"India, UK",50/500,International
+Januvia,0.630952380952381,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",50,International
+Jardiance,1.36944444444444,"Australia, Canada, Mauritius, NZ, UK",10,International
+Jublia,13.75,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",10,International
+Ketotifen,0.28495,"Australia, Canada, India, NZ, UK",1,International
+Lamictal,0.3075,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",2,International
+Lamotrigine,0.183222222222222,"India, UK",25,International
+Latuda,3,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",40,International
+Levitra,1.13178928571429,"India, UK",5,International
+Levothyroxine,0.1389,"India, UK",100,International
+Linzess,3.98154761904762,"Australia, Canada, Mauritius, NZ, UK",290,International
+Lipitor,0.299444444444444,"Australia, Canada, Mauritius, NZ, UK",10,International
+Lisinopril,0.134,"India, UK",2.5,International
+Livalo,0.688333333333333,"Australia, Canada, Mauritius, NZ, UK",2,International
+Losartan,0.123,"India, UK",25,International
+Lumigan,1.108,"Australia, Canada, NZ, UK",0.03,International
+Lupron Depot,243.333333333333,"Australia, Canada, India, Mauritius, NZ, UK",3.75,International
+Mebendazole,0.304222222222222,"India, UK",100,International
+Menopur,25,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",75,International
+Mesalamine,0.0481547619047619,"Australia, Canada, Mauritius, NZ, UK",4,International
+Metformin,0.0749642857142857,"Australia, Canada, Mauritius, NZ, UK",850,International
+Methotrexate,0.047448,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",2.5,International
+Mexiletine,1.05,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",200,International
+Mexiletine,1.05,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",200,International
+Mexiletine,1.05,"Australia, Canada, India, Mauritius, NZ, UK",200,International
+Mexiletine,1.05,"Australia, Canada, India, Mauritius, NZ, UK, US",200,International
+Midodrine,0.435,Canada,2.5,International
+Mirabegron,0.866333333333333,"Australia, Canada, Mauritius, NZ, UK",25,International
+Motilium,0.2795,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",10,International
+Myrbetriq,1.55944444444444,"Australia, Canada, Mauritius, NZ, UK",50,International
+Myrbetriq ER,1.67611111111111,"Australia, Canada, India, NZ, UK",50,International
+Nardil,0.583333333333333,"Australia, Canada, India, Mauritius, NZ, UK",15,International
+Nebivolol,0.202888888888889,India,2.5,International
+Nexavar,42.8302678571429,"Australia, Canada, India, NZ, UK",200,International
+Nexium,0.290714285714286,"Australia, Canada, Mauritius, NZ, UK",40,International
+Nitazoxanide,0.458333333333333,"Canada, India, Mauritius, NZ, Turkey, UK",500,International
+OFEV,19.8333333333333,"Canada, India, Mauritius, NZ, Turkey, UK",100,International
+Olumiant,36.6665555555556,Canada,2,International
+Otezla,21.3659821428571,"Australia, Canada, Mauritius, NZ, UK",30,International
+Palladia,6.79988888888889,"Australia, Canada, Mauritius, NZ, UK",15,International
+Pantoprazole,0.15495,"Australia, Canada, Mauritius, NZ, UK",40,International
+Pentasa,0.0857142857142857,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",1,International
+Pimobendan,0.704722222222222,"Australia, Canada, Mauritius, NZ, UK",5,International
+Pirfenidone,0.431975308641975,"Australia, Canada, India, NZ, UK",200,International
+Pitavastatin,0.3705,"Australia, Canada, Mauritius, NZ, UK",1,International
+Plaquenil,0.3255,"Australia, Canada, Mauritius, NZ, UK",200,International
+Pradaxa,0.789166666666667,"Australia, Canada, Mauritius, NZ, UK",75,International
+Premarin,0.261904761904762,"Canada, India, Mauritius, NZ, Turkey, UK",0.625,International
+Premarin Vaginal Cream,1.07142857142857,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",0.625,International
+Premarin Vaginal Cream,1.07142857142857,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",0.625,International
+Procarbazine,1.31922222222222,"India, UK",50,International
+Propranolol,0.113555555555556,"India, UK",40,International
+Prucalopride,0.9799,"Australia, Canada, India, NZ, UK",1,International
+Pulmicort Flexhaler,0.113416666666667,"Australia, Canada, Mauritius, NZ, UK",200,International
+Pulmicort Turbuhaler,0.1,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",100,International
+Qvar Redihaler,0.17025,"Australia, Canada, Mauritius, NZ, UK",40,International
+Ranolazine,0.324333333333333,India,500,International
+Relvar Ellipta,3.33333333333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",100,International
+Relvar Ellipta,3.33333333333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",100,International
+Restasis,1.38277777777778,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",0.05,International
+Retin-A Cream,0.65425,"Australia, Canada, Mauritius, NZ, UK",5,International
+Revolade,53.5235714285714,"Australia, Canada, India, NZ, UK",25,International
+Rifaximin,0.3395,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",200,International
+Rosuvastatin Calcium,0.1799,"Australia, Canada, Mauritius, NZ, UK",10,International
+Rybelsus,10.5,Canada,14,International
+Rybelsus,10.5,Canada,7,International
+Salofalk,0.671666666666667,"Australia, Canada, India, Mauritius, NZ, UK",500,International
+Sildenafil,0.215909090909091,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",100,International
+Simvastatin,0.05,"Australia, Canada, Mauritius, NZ, UK",10,International
+Sorafenib,3.36788888888889,"India, UK",200,International
+Spiriva HandiHaler,0.617111111111111,"Australia, Canada, Mauritius, NZ, UK",18,International
+Spiriva Respimat,1.21111111111111,"Australia, Canada, India, Mauritius, NZ, UK",2.5,International
+Symbicort Inhaler,0.232888888888889,"Australia, Canada, Mauritius, NZ, UK",100/6,International
+Symbicort Turbuhaler,0.2,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",80/4.5,International
+Synthroid,0.144444444444444,"Australia, Canada, India, Mauritius,  NZ,  Turkey, UK",50,International
+Tacrolimus,0.658333333333333,"Canada, India, Mauritius, NZ, Turkey, UK",0.5,International
+Tadalafil,0.32875,India,20,International
+Tagrisso,335.411111111111,"Canada, India, Mauritius, NZ, Turkey, UK",40,International
+Tecfidera,18.8303571428571,"Canada, India, Mauritius, NZ, Turkey, UK",120,International
+Temozolomide,6.666,"Australia, Canada, India, NZ, UK",5,International
+Tiotropium Bromide,0.274333333333333,"India, UK",18,International
+Tolvaptan,14.583125,"Australia, Canada, India, NZ, UK",15,International
+Tradjenta,1.37944444444444,"Australia, Canada, Mauritius, NZ, UK",5,International
+Trazodone,0.138222222222222,"India, UK",50,International
+Trelegy Ellipta,2.48888888888889,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",0.1,International
+Trelegy Ellipta,2.48888888888889,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",0.1/0.0625/0.025,International
+Trelegy Ellipta,2.48888888888889,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",0.1/0.0625/0.025,International
+Trelegy Ellipta,2.48888888888889,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",100/62.5/25,International
+Trelegy Ellipta,2.48888888888889,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",92,International
+Trelegy Ellipta,2.48888888888889,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",92/55/22,International
+Tretinoin,0.483333333333333,"Australia, Canada, India, Mauritius, NZ, UK",0.05,International
+Trintellix,1.7975,"Australia, Canada, India, NZ, UK",5,International
+Vagifem,0.766111111111111,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",25,International
+Valtrex,1.06944444444444,"Australia, Canada, Mauritius, NZ, UK",500,International
+Vardenafil,0.422222222222222,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",20,International
+Varenicline,1,Canada,1,International
+Vascepa,1.4865178571428601,"Australia, Canada, India, NZ, UK",1,International
+Ventolin HFA,0.0534166666666667,"Australia, Canada, Mauritius, NZ, UK",90,International
+Vetmedin,0.81,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",1.25,International
+Viagra,6.10227272727273,"Australia,  Canada, India, Mauritius,  NZ, Turkey, UK",100,International
+Viibryd,3.96666666666667,Canada,10,International
+Viibryd,3.96666666666667,Canada,20,International
+Voltaren,0.103,Canada,1.1599999999999999,International
+Votrient,15.4443333333333,"Australia, Canada, India, NZ, UK",200,International
+Vraylar,12.1547619047619,"Australia, Canada, Mauritius, NZ, UK",3,International
+Warfarin,0.142222222222222,"India, UK",2,International
+Wellbutrin XL,0.583333333333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK",150,International
+Xarelto,1.30696428571429,"India, UK",10,International
+Xeljanz,12.6666071428571,"Australia, Canada, India, NZ, UK",5,International
+Xifaxan,3.08333333333333,"Australia, Canada, India, Mauritius, NZ, Turkey, UK, US",200,International
+Zyprexa,1.17,"Australia, Canada, Mauritius, NZ, UK",10,International
+Zytiga,31.575,"Canada, India, Mauritius, NZ, Turkey, UK",250,International

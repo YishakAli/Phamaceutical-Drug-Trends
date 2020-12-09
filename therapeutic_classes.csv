@@ -1,0 +1,415 @@
+"","therapeutic_class","year","expenditure","purchases"
+"1"," Alternative Medicines",1996,NA,NA
+"2"," Alternative Medicines",1997,NA,NA
+"3"," Alternative Medicines",1998,NA,NA
+"4"," Alternative Medicines",1999,NA,NA
+"5"," Alternative Medicines",2000,NA,NA
+"6"," Alternative Medicines",2001,NA,NA
+"7"," Alternative Medicines",2002,NA,NA
+"8"," Alternative Medicines",2003,NA,NA
+"9"," Alternative Medicines",2004,NA,NA
+"10"," Alternative Medicines",2005,NA,NA
+"11"," Alternative Medicines",2006,NA,NA
+"12"," Alternative Medicines",2007,400,3024
+"13"," Alternative Medicines",2008,530,3435
+"14"," Alternative Medicines",2009,720,5472
+"15"," Alternative Medicines",2010,743,5457
+"16"," Alternative Medicines",2011,1119,6198
+"17"," Alternative Medicines",2012,862,6656
+"18"," Alternative Medicines",2013,699,5810
+"19"," Alternative Medicines",2014,955,5662
+"20"," Alternative Medicines",2015,891,8790
+"21"," Alternative Medicines",2016,637,7472
+"22"," Alternative Medicines",2017,390,5476
+"23"," Alternative Medicines",2018,328,5192
+"24"," Anti-Infectives",1996,5425,190794
+"25"," Anti-Infectives",1997,5477,157277
+"26"," Anti-Infectives",1998,5553,141012
+"27"," Anti-Infectives",1999,5501,131199
+"28"," Anti-Infectives",2000,5885,130744
+"29"," Anti-Infectives",2001,7379,147917
+"30"," Anti-Infectives",2002,9529,149825
+"31"," Anti-Infectives",2003,10445,169130
+"32"," Anti-Infectives",2004,10947,158948
+"33"," Anti-Infectives",2005,11645,169081
+"34"," Anti-Infectives",2006,10480,166228
+"35"," Anti-Infectives",2007,10800,153109
+"36"," Anti-Infectives",2008,9620,159562
+"37"," Anti-Infectives",2009,15705,162865
+"38"," Anti-Infectives",2010,13980,148747
+"39"," Anti-Infectives",2011,15296,157038
+"40"," Anti-Infectives",2012,15654,146182
+"41"," Anti-Infectives",2013,14076,153986
+"42"," Anti-Infectives",2014,32038,161111
+"43"," Anti-Infectives",2015,45543,150767
+"44"," Anti-Infectives",2016,23835,139951
+"45"," Anti-Infectives",2017,36344,144425
+"46"," Anti-Infectives",2018,37432,162937
+"47"," Antihyperlipidemic Agents",1996,4139,44824
+"48"," Antihyperlipidemic Agents",1997,4814,56173
+"49"," Antihyperlipidemic Agents",1998,5543,69286
+"50"," Antihyperlipidemic Agents",1999,6893,84081
+"51"," Antihyperlipidemic Agents",2000,8258,101387
+"52"," Antihyperlipidemic Agents",2001,11266,126455
+"53"," Antihyperlipidemic Agents",2002,14279,150321
+"54"," Antihyperlipidemic Agents",2003,18622,183143
+"55"," Antihyperlipidemic Agents",2004,21519,214263
+"56"," Antihyperlipidemic Agents",2005,NA,NA
+"57"," Antihyperlipidemic Agents",2006,NA,NA
+"58"," Antihyperlipidemic Agents",2007,NA,NA
+"59"," Antihyperlipidemic Agents",2008,NA,NA
+"60"," Antihyperlipidemic Agents",2009,NA,NA
+"61"," Antihyperlipidemic Agents",2010,NA,NA
+"62"," Antihyperlipidemic Agents",2011,NA,NA
+"63"," Antihyperlipidemic Agents",2012,NA,NA
+"64"," Antihyperlipidemic Agents",2013,NA,NA
+"65"," Antihyperlipidemic Agents",2014,NA,NA
+"66"," Antihyperlipidemic Agents",2015,NA,NA
+"67"," Antihyperlipidemic Agents",2016,NA,NA
+"68"," Antihyperlipidemic Agents",2017,NA,NA
+"69"," Antihyperlipidemic Agents",2018,NA,NA
+"70"," Antineoplastics",1996,1600,27233
+"71"," Antineoplastics",1997,1231,23854
+"72"," Antineoplastics",1998,1975,22569
+"73"," Antineoplastics",1999,1547,28946
+"74"," Antineoplastics",2000,1520,24580
+"75"," Antineoplastics",2001,1915,23786
+"76"," Antineoplastics",2002,1814,20390
+"77"," Antineoplastics",2003,1903,16763
+"78"," Antineoplastics",2004,2009,17842
+"79"," Antineoplastics",2005,3553,18307
+"80"," Antineoplastics",2006,4316,21326
+"81"," Antineoplastics",2007,10107,21482
+"82"," Antineoplastics",2008,4623,24683
+"83"," Antineoplastics",2009,5465,24002
+"84"," Antineoplastics",2010,7907,19767
+"85"," Antineoplastics",2011,8768,21319
+"86"," Antineoplastics",2012,8233,18710
+"87"," Antineoplastics",2013,9539,18794
+"88"," Antineoplastics",2014,11238,19604
+"89"," Antineoplastics",2015,6101,17975
+"90"," Antineoplastics",2016,12272,16796
+"91"," Antineoplastics",2017,20844,18472
+"92"," Antineoplastics",2018,24615,20922
+"93"," Cardiovascular Agents",1996,14243,387322
+"94"," Cardiovascular Agents",1997,14532,399648
+"95"," Cardiovascular Agents",1998,15419,433750
+"96"," Cardiovascular Agents",1999,18965,451809
+"97"," Cardiovascular Agents",2000,19250,459205
+"98"," Cardiovascular Agents",2001,22697,534995
+"99"," Cardiovascular Agents",2002,25006,590622
+"100"," Cardiovascular Agents",2003,28622,623820
+"101"," Cardiovascular Agents",2004,31856,670278
+"102"," Cardiovascular Agents",2005,32852,691539
+"103"," Cardiovascular Agents",2006,33141,713711
+"104"," Cardiovascular Agents",2007,29239,715295
+"105"," Cardiovascular Agents",2008,29706,746375
+"106"," Cardiovascular Agents",2009,28117,730274
+"107"," Cardiovascular Agents",2010,28227,738865
+"108"," Cardiovascular Agents",2011,24567,738176
+"109"," Cardiovascular Agents",2012,25973,702358
+"110"," Cardiovascular Agents",2013,28357,713734
+"111"," Cardiovascular Agents",2014,27450,721993
+"112"," Cardiovascular Agents",2015,28724,719154
+"113"," Cardiovascular Agents",2016,31899,704746
+"114"," Cardiovascular Agents",2017,26082,671715
+"115"," Cardiovascular Agents",2018,26849,654961
+"116"," Central Nervous System Agents",1996,7250,260787
+"117"," Central Nervous System Agents",1997,8092,269904
+"118"," Central Nervous System Agents",1998,8986,267233
+"119"," Central Nervous System Agents",1999,10890,277010
+"120"," Central Nervous System Agents",2000,13313,311466
+"121"," Central Nervous System Agents",2001,18011,356771
+"122"," Central Nervous System Agents",2002,19188,370776
+"123"," Central Nervous System Agents",2003,23460,372578
+"124"," Central Nervous System Agents",2004,24790,403119
+"125"," Central Nervous System Agents",2005,28425,470783
+"126"," Central Nervous System Agents",2006,31021,484812
+"127"," Central Nervous System Agents",2007,34367,488057
+"128"," Central Nervous System Agents",2008,38752,523234
+"129"," Central Nervous System Agents",2009,38418,539517
+"130"," Central Nervous System Agents",2010,37780,570660
+"131"," Central Nervous System Agents",2011,38996,591303
+"132"," Central Nervous System Agents",2012,40450,588037
+"133"," Central Nervous System Agents",2013,43238,613476
+"134"," Central Nervous System Agents",2014,46098,658764
+"135"," Central Nervous System Agents",2015,52743,640601
+"136"," Central Nervous System Agents",2016,49135,594018
+"137"," Central Nervous System Agents",2017,52263,606752
+"138"," Central Nervous System Agents",2018,60372,624994
+"139"," Coagulation Modifiers",1996,1023,26017
+"140"," Coagulation Modifiers",1997,1160,27427
+"141"," Coagulation Modifiers",1998,924,23527
+"142"," Coagulation Modifiers",1999,1511,27121
+"143"," Coagulation Modifiers",2000,1584,28462
+"144"," Coagulation Modifiers",2001,1954,33924
+"145"," Coagulation Modifiers",2002,2841,42905
+"146"," Coagulation Modifiers",2003,3392,45989
+"147"," Coagulation Modifiers",2004,4630,58622
+"148"," Coagulation Modifiers",2005,4964,55343
+"149"," Coagulation Modifiers",2006,9416,55152
+"150"," Coagulation Modifiers",2007,5546,57407
+"151"," Coagulation Modifiers",2008,6373,55694
+"152"," Coagulation Modifiers",2009,7366,63214
+"153"," Coagulation Modifiers",2010,11477,69034
+"154"," Coagulation Modifiers",2011,NA,66841
+"155"," Coagulation Modifiers",2012,24022,62032
+"156"," Coagulation Modifiers",2013,7188,57973
+"157"," Coagulation Modifiers",2014,21542,62684
+"158"," Coagulation Modifiers",2015,9190,58097
+"159"," Coagulation Modifiers",2016,11728,59593
+"160"," Coagulation Modifiers",2017,12412,55098
+"161"," Coagulation Modifiers",2018,15834,60114
+"162"," Gastrointestinal Agents",1996,5330,78027
+"163"," Gastrointestinal Agents",1997,5549,77557
+"164"," Gastrointestinal Agents",1998,6127,90092
+"165"," Gastrointestinal Agents",1999,6714,91562
+"166"," Gastrointestinal Agents",2000,7007,94235
+"167"," Gastrointestinal Agents",2001,10288,115304
+"168"," Gastrointestinal Agents",2002,12263,133219
+"169"," Gastrointestinal Agents",2003,16000,148234
+"170"," Gastrointestinal Agents",2004,16306,154299
+"171"," Gastrointestinal Agents",2005,16081,153003
+"172"," Gastrointestinal Agents",2006,14622,153373
+"173"," Gastrointestinal Agents",2007,18945,158248
+"174"," Gastrointestinal Agents",2008,20843,157623
+"175"," Gastrointestinal Agents",2009,19520,164109
+"176"," Gastrointestinal Agents",2010,19214,165965
+"177"," Gastrointestinal Agents",2011,17874,162053
+"178"," Gastrointestinal Agents",2012,16340,162417
+"179"," Gastrointestinal Agents",2013,16804,171261
+"180"," Gastrointestinal Agents",2014,18132,178377
+"181"," Gastrointestinal Agents",2015,18691,182618
+"182"," Gastrointestinal Agents",2016,18698,177773
+"183"," Gastrointestinal Agents",2017,16065,161028
+"184"," Gastrointestinal Agents",2018,17157,162584
+"185"," Genitourinary Tract Agents",1996,NA,NA
+"186"," Genitourinary Tract Agents",1997,NA,NA
+"187"," Genitourinary Tract Agents",1998,NA,NA
+"188"," Genitourinary Tract Agents",1999,NA,NA
+"189"," Genitourinary Tract Agents",2000,NA,NA
+"190"," Genitourinary Tract Agents",2001,NA,NA
+"191"," Genitourinary Tract Agents",2002,NA,NA
+"192"," Genitourinary Tract Agents",2003,NA,NA
+"193"," Genitourinary Tract Agents",2004,NA,NA
+"194"," Genitourinary Tract Agents",2005,NA,NA
+"195"," Genitourinary Tract Agents",2006,NA,NA
+"196"," Genitourinary Tract Agents",2007,NA,NA
+"197"," Genitourinary Tract Agents",2008,2089,17938
+"198"," Genitourinary Tract Agents",2009,2180,17796
+"199"," Genitourinary Tract Agents",2010,2388,19887
+"200"," Genitourinary Tract Agents",2011,3172,22072
+"201"," Genitourinary Tract Agents",2012,2796,17782
+"202"," Genitourinary Tract Agents",2013,2493,15325
+"203"," Genitourinary Tract Agents",2014,2616,15978
+"204"," Genitourinary Tract Agents",2015,3598,17903
+"205"," Genitourinary Tract Agents",2016,3981,16765
+"206"," Genitourinary Tract Agents",2017,4144,17787
+"207"," Genitourinary Tract Agents",2018,4277,16445
+"208"," Hormones/Hormone Modifiers",1996,7907,288090
+"209"," Hormones/Hormone Modifiers",1997,9570,303504
+"210"," Hormones/Hormone Modifiers",1998,10715,332318
+"211"," Hormones/Hormone Modifiers",1999,13124,365784
+"212"," Hormones/Hormone Modifiers",2000,15852,390510
+"213"," Hormones/Hormone Modifiers",2001,21322,430270
+"214"," Hormones/Hormone Modifiers",2002,21835,449022
+"215"," Hormones/Hormone Modifiers",2003,24734,445470
+"216"," Hormones/Hormone Modifiers",2004,25146,460952
+"217"," Hormones/Hormone Modifiers",2005,18269,303834
+"218"," Hormones/Hormone Modifiers",2006,17599,301341
+"219"," Hormones/Hormone Modifiers",2007,17031,292386
+"220"," Hormones/Hormone Modifiers",2008,11251,247999
+"221"," Hormones/Hormone Modifiers",2009,14558,252000
+"222"," Hormones/Hormone Modifiers",2010,14156,263385
+"223"," Hormones/Hormone Modifiers",2011,12171,252101
+"224"," Hormones/Hormone Modifiers",2012,12356,244967
+"225"," Hormones/Hormone Modifiers",2013,15009,243720
+"226"," Hormones/Hormone Modifiers",2014,17754,246657
+"227"," Hormones/Hormone Modifiers",2015,20137,260348
+"228"," Hormones/Hormone Modifiers",2016,16042,260466
+"229"," Hormones/Hormone Modifiers",2017,15974,243680
+"230"," Hormones/Hormone Modifiers",2018,16928,247065
+"231"," Immunologic Agents",1996,NA,NA
+"232"," Immunologic Agents",1997,927,2350
+"233"," Immunologic Agents",1998,1267,4701
+"234"," Immunologic Agents",1999,2576,4018
+"235"," Immunologic Agents",2000,NA,NA
+"236"," Immunologic Agents",2001,746,2440
+"237"," Immunologic Agents",2002,1615,3449
+"238"," Immunologic Agents",2003,1571,3351
+"239"," Immunologic Agents",2004,2068,4674
+"240"," Immunologic Agents",2005,2066,3935
+"241"," Immunologic Agents",2006,NA,NA
+"242"," Immunologic Agents",2007,3091,3549
+"243"," Immunologic Agents",2008,3040,5062
+"244"," Immunologic Agents",2009,9945,7753
+"245"," Immunologic Agents",2010,11110,7944
+"246"," Immunologic Agents",2011,12250,8273
+"247"," Immunologic Agents",2012,10624,9696
+"248"," Immunologic Agents",2013,17718,12452
+"249"," Immunologic Agents",2014,11080,12571
+"250"," Immunologic Agents",2015,13699,8566
+"251"," Immunologic Agents",2016,20496,9184
+"252"," Immunologic Agents",2017,26542,10348
+"253"," Immunologic Agents",2018,30875,10719
+"254"," Metabolic Agents",1996,NA,NA
+"255"," Metabolic Agents",1997,NA,NA
+"256"," Metabolic Agents",1998,NA,NA
+"257"," Metabolic Agents",1999,NA,NA
+"258"," Metabolic Agents",2000,NA,NA
+"259"," Metabolic Agents",2001,NA,NA
+"260"," Metabolic Agents",2002,NA,NA
+"261"," Metabolic Agents",2003,NA,NA
+"262"," Metabolic Agents",2004,NA,NA
+"263"," Metabolic Agents",2005,35630,392408
+"264"," Metabolic Agents",2006,38275,436998
+"265"," Metabolic Agents",2007,41157,451134
+"266"," Metabolic Agents",2008,52823,518567
+"267"," Metabolic Agents",2009,45648,501814
+"268"," Metabolic Agents",2010,49678,515384
+"269"," Metabolic Agents",2011,50974,521795
+"270"," Metabolic Agents",2012,53034,509177
+"271"," Metabolic Agents",2013,56581,511452
+"272"," Metabolic Agents",2014,67145,523492
+"273"," Metabolic Agents",2015,80849,527926
+"274"," Metabolic Agents",2016,85180,491600
+"275"," Metabolic Agents",2017,85050,485719
+"276"," Metabolic Agents",2018,98686,498981
+"277"," Miscellaneous Agents",1996,632,20345
+"278"," Miscellaneous Agents",1997,678,19003
+"279"," Miscellaneous Agents",1998,839,19397
+"280"," Miscellaneous Agents",1999,1942,23689
+"281"," Miscellaneous Agents",2000,1694,27377
+"282"," Miscellaneous Agents",2001,1848,31700
+"283"," Miscellaneous Agents",2002,2396,32543
+"284"," Miscellaneous Agents",2003,3989,35086
+"285"," Miscellaneous Agents",2004,5954,55638
+"286"," Miscellaneous Agents",2005,7173,48547
+"287"," Miscellaneous Agents",2006,9063,49837
+"288"," Miscellaneous Agents",2007,10600,50588
+"289"," Miscellaneous Agents",2008,10844,29976
+"290"," Miscellaneous Agents",2009,9962,30182
+"291"," Miscellaneous Agents",2010,10146,32879
+"292"," Miscellaneous Agents",2011,18430,36281
+"293"," Miscellaneous Agents",2012,15754,37522
+"294"," Miscellaneous Agents",2013,20192,35806
+"295"," Miscellaneous Agents",2014,17131,37232
+"296"," Miscellaneous Agents",2015,18521,36808
+"297"," Miscellaneous Agents",2016,28697,38078
+"298"," Miscellaneous Agents",2017,43276,36904
+"299"," Miscellaneous Agents",2018,40675,36712
+"300"," Not Ascertained",1996,634,29507
+"301"," Not Ascertained",1997,1972,34871
+"302"," Not Ascertained",1998,869,38228
+"303"," Not Ascertained",1999,2195,47246
+"304"," Not Ascertained",2000,1449,44363
+"305"," Not Ascertained",2001,2258,45066
+"306"," Not Ascertained",2002,1778,52666
+"307"," Not Ascertained",2003,1431,48607
+"308"," Not Ascertained",2004,2538,47720
+"309"," Not Ascertained",2005,2379,52119
+"310"," Not Ascertained",2006,3490,55360
+"311"," Not Ascertained",2007,3276,56166
+"312"," Not Ascertained",2008,3716,45758
+"313"," Not Ascertained",2009,2753,48554
+"314"," Not Ascertained",2010,4056,57248
+"315"," Not Ascertained",2011,4232,51371
+"316"," Not Ascertained",2012,4784,65820
+"317"," Not Ascertained",2013,9000,80250
+"318"," Not Ascertained",2014,8920,77020
+"319"," Not Ascertained",2015,6500,79644
+"320"," Not Ascertained",2016,9335,72214
+"321"," Not Ascertained",2017,7899,68325
+"322"," Not Ascertained",2018,6515,68506
+"323"," Nutritional Products",1996,904,60242
+"324"," Nutritional Products",1997,972,62817
+"325"," Nutritional Products",1998,1096,67736
+"326"," Nutritional Products",1999,1052,66534
+"327"," Nutritional Products",2000,1134,62635
+"328"," Nutritional Products",2001,1168,68279
+"329"," Nutritional Products",2002,1321,74699
+"330"," Nutritional Products",2003,1497,82274
+"331"," Nutritional Products",2004,1528,84456
+"332"," Nutritional Products",2005,1772,87509
+"333"," Nutritional Products",2006,2241,91875
+"334"," Nutritional Products",2007,2163,84891
+"335"," Nutritional Products",2008,2858,94817
+"336"," Nutritional Products",2009,2799,96309
+"337"," Nutritional Products",2010,3625,104017
+"338"," Nutritional Products",2011,3551,100152
+"339"," Nutritional Products",2012,3032,99577
+"340"," Nutritional Products",2013,2935,107530
+"341"," Nutritional Products",2014,2888,110525
+"342"," Nutritional Products",2015,2264,105605
+"343"," Nutritional Products",2016,2145,98780
+"344"," Nutritional Products",2017,1941,91304
+"345"," Nutritional Products",2018,2471,88750
+"346"," Psychotherapeutic Agents",1996,5852,137061
+"347"," Psychotherapeutic Agents",1997,7913,141863
+"348"," Psychotherapeutic Agents",1998,8981,152760
+"349"," Psychotherapeutic Agents",1999,8980,151303
+"350"," Psychotherapeutic Agents",2000,13163,172168
+"351"," Psychotherapeutic Agents",2001,15272,209431
+"352"," Psychotherapeutic Agents",2002,16434,234676
+"353"," Psychotherapeutic Agents",2003,19368,249030
+"354"," Psychotherapeutic Agents",2004,20043,244296
+"355"," Psychotherapeutic Agents",2005,18792,199583
+"356"," Psychotherapeutic Agents",2006,18887,200741
+"357"," Psychotherapeutic Agents",2007,18091,196383
+"358"," Psychotherapeutic Agents",2008,20892,206295
+"359"," Psychotherapeutic Agents",2009,22308,225164
+"360"," Psychotherapeutic Agents",2010,24944,223645
+"361"," Psychotherapeutic Agents",2011,24267,235391
+"362"," Psychotherapeutic Agents",2012,24128,238493
+"363"," Psychotherapeutic Agents",2013,26995,240028
+"364"," Psychotherapeutic Agents",2014,27728,256241
+"365"," Psychotherapeutic Agents",2015,25064,262152
+"366"," Psychotherapeutic Agents",2016,24310,240784
+"367"," Psychotherapeutic Agents",2017,19539,240110
+"368"," Psychotherapeutic Agents",2018,23191,255706
+"369"," Respiratory Agents",1996,4917,170652
+"370"," Respiratory Agents",1997,5158,161352
+"371"," Respiratory Agents",1998,5472,164343
+"372"," Respiratory Agents",1999,7282,180216
+"373"," Respiratory Agents",2000,8004,184969
+"374"," Respiratory Agents",2001,11736,221986
+"375"," Respiratory Agents",2002,13518,237093
+"376"," Respiratory Agents",2003,14373,232807
+"377"," Respiratory Agents",2004,13674,224205
+"378"," Respiratory Agents",2005,15387,224153
+"379"," Respiratory Agents",2006,16139,227899
+"380"," Respiratory Agents",2007,17785,205938
+"381"," Respiratory Agents",2008,18401,187977
+"382"," Respiratory Agents",2009,20232,186414
+"383"," Respiratory Agents",2010,21067,195335
+"384"," Respiratory Agents",2011,23152,199347
+"385"," Respiratory Agents",2012,23711,177649
+"386"," Respiratory Agents",2013,25353,186089
+"387"," Respiratory Agents",2014,24077,185439
+"388"," Respiratory Agents",2015,24715,180444
+"389"," Respiratory Agents",2016,27161,173601
+"390"," Respiratory Agents",2017,27981,191289
+"391"," Respiratory Agents",2018,32801,209408
+"392"," Topical Agents",1996,3443,141386
+"393"," Topical Agents",1997,3822,135220
+"394"," Topical Agents",1998,3943,140642
+"395"," Topical Agents",1999,4796,136121
+"396"," Topical Agents",2000,4394,132254
+"397"," Topical Agents",2001,5901,143363
+"398"," Topical Agents",2002,6489,149173
+"399"," Topical Agents",2003,7432,141555
+"400"," Topical Agents",2004,7653,134808
+"401"," Topical Agents",2005,7664,125705
+"402"," Topical Agents",2006,8254,131372
+"403"," Topical Agents",2007,8537,132216
+"404"," Topical Agents",2008,8473,123200
+"405"," Topical Agents",2009,9714,129196
+"406"," Topical Agents",2010,10186,135000
+"407"," Topical Agents",2011,10797,134451
+"408"," Topical Agents",2012,10668,127048
+"409"," Topical Agents",2013,11614,142100
+"410"," Topical Agents",2014,13376,147833
+"411"," Topical Agents",2015,14730,152041
+"412"," Topical Agents",2016,15120,151997
+"413"," Topical Agents",2017,12657,151435
+"414"," Topical Agents",2018,14550,144813
