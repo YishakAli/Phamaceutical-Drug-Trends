@@ -1,0 +1,12 @@
+name: pharma_drug_price_trends
+title: pharma_drug_price_trends
+username:
+account: yishak-ali
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3376419
+bundleId: 3966527
+url: https://yishak-ali.shinyapps.io/pharma_drug_price_trends/
+when: 1607532154.25985
+asMultiple: FALSE
+asStatic: FALSE

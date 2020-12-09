@@ -12,6 +12,7 @@ library(ggthemes)
 library(gt)
 library(gtsummary)
 library(broom.mixed)
+library(shinythemes)
 
 # Loads in drug acquisition data set
 
@@ -117,7 +118,7 @@ three_mean <- mean(predict_3$three)
 
 # Defines UI for app 
 
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("flatly"),
     
     
     navbarPage("Fair or Exploitative Pricing: Pharmaceutical Drug Price Trends",
@@ -288,11 +289,9 @@ ui <- fluidPage(
                                variables, we can conclude that they are significant predictors. 0 does fall in the confidence interval, so we can not 
                                conclude with this data that more alternatives is correlated with cheaper average cost. It was difficult to get data on prices,
                                so the dataset for this model is fairly small, hence the large uncertainty. A dataset with more observations would go a long way in
-                               improving upon this model."),
-                            
-                             p("All in all, we conlcude from this model that the generic type is significantly cheaper than brand and that international bought drugs
+                               improving upon this model. All in all, we conlcude from this model that the generic type is significantly cheaper than brand and that international bought drugs
                               are significantly cheaper to US bought ones")
-                         
+                    
                        
                ),
                
@@ -316,9 +315,7 @@ ui <- fluidPage(
                         h2("Contact"),
                         
                         p("Hello! My name is Yishak Ali, and I'm a junior in Leverett House studying Neuroscience and Economics. This was my final project
-                          for Gov 50: Data. If you're interested in contacting me, my email is ysali@college.harvard.edu. The source code for this app can be found here:
-                          https://github.com/YishakAli/Phamaceutical-Drug-Trends"))
-               
+                          for Gov 50: Data. If you're interested in contacting me, my email is ysali@college.harvard.edu. The source code for this app can be found here: https://github.com/YishakAli/Phamaceutical-Drug-Trends"))
                
     )
 )
