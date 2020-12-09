@@ -5,8 +5,8 @@ account: yishak-ali
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3376419
-bundleId: 3966527
+bundleId: 3966549
 url: https://yishak-ali.shinyapps.io/pharma_drug_price_trends/
-when: 1607532154.25985
+when: 1607532504.64644
 asMultiple: FALSE
 asStatic: FALSE

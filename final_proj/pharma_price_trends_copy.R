@@ -288,8 +288,7 @@ ui <- fluidPage(theme = shinytheme("flatly"),
                              p("Given that 0 does not fall in the 95% confidence interval for the estimate of the generic and usa_price_per_unit
                                variables, we can conclude that they are significant predictors. 0 does fall in the confidence interval, so we can not 
                                conclude with this data that more alternatives is correlated with cheaper average cost. It was difficult to get data on prices,
-                               so the dataset for this model is fairly small, hence the large uncertainty. A dataset with more observations would go a long way in
-                               improving upon this model. All in all, we conlcude from this model that the generic type is significantly cheaper than brand and that international bought drugs
+                               so the dataset for this model is fairly small, hence the large uncertainty. All in all, we conclude from this model that the generic type is significantly cheaper than brand and that international bought drugs
                               are significantly cheaper to US bought ones")
                     
                        
