@@ -330,6 +330,7 @@ server <- function(input, output, session) {
                        color = ndc_description)) +
             geom_line(size = .8) +
             geom_point() +
+            stat_summary(fun.y=mean, aes(group = 1), geom="line", colour="darkblue", size = 1.2, lty = 2) +
             labs(title = "Drug Acquisition Price per Unit of the Most Prescribed Drugs in the US",
                  x = "\nYear",
                  y = "Mean Price in US Dollars",
@@ -351,7 +352,7 @@ server <- function(input, output, session) {
     # Renders the table that gives descriptions of the conditions the listed drugs treat.
     
     output$drug_condition_treat <- render_gt({
-        tibble(Brand = c("Amoxicillin", "Cozaar", "Glucophage",
+        tibble(Brand = c("Amoxil", "Cozaar", "Glucophage",
                          "Lipitor", "Neurontin", "Norvasc",
                          "Prilosec", "Prinivil", "Synthroid", "Zocor"),
                `Condition Treated` = c("Bacterial infection","Hypertension", "Diabetes",
